@@ -1,0 +1,25 @@
+name: ExpTech_Core
+version: 1.0
+author: whes1015
+main: main
+api-version: 1.19
+loadbefore:
+  - ExpTech_FreeCamera
+  - ExpTech_DataRecord
+  - ExpTech_BanSystem
+  - ExpTech_Economy
+  - ExpTech_Organization
+  - ExpTech_Here
+
+commands:
+  et:
+    description: 控制 ExpTech 插件
+    usage: /et <args>
+    permission: exptech.admin
+  dc:
+    description: 綁定 dc 帳號
+    usage: /dc <args>
+permissions:
+  exptech.admin:
+    description: 使用控制類指令
+    default: op
